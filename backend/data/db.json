@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "LMS Software",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "tasks": [1, 2],
+      "recentActivities": [1, 2]
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "upload course video",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "deadLine": "02-05-2023",
+      "status": "pending",
+      "projectId": 1,
+      "members": [1]
+    }
+  ],
+  "recentActivities": [
+    {
+      "id": 1,
+      "details": "lorem inpusm",
+      "projectId": 1
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "name": "rayan",
+      "taskId": 1
+    }
+  ]
+}
