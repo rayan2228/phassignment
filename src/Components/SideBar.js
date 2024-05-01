@@ -33,10 +33,14 @@ const SideBar = () => {
         logoutUser()
         router.push("/auth/login")
     }
+    const handleRouteChange = (e) => {
+        router.push(`/home/project/${e.key}`)
+    }
     return (
         <>
             <div className='py-2 text-center capitalize bg-gray-300'>project management dashboard</div>
             <Menu
+                onClick={handleRouteChange}
                 style={{
                     width: 256,
                 }}

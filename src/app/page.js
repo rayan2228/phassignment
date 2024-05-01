@@ -14,5 +14,6 @@ export default function Home() {
           router.push("/auth/login")
       }
     </>
+
   );
 }

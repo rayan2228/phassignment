@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 const register = () => {
+
     const router = useRouter()
     const [api, contextHolder] = notification.useNotification();
     const openNotification = (type, message) => {
