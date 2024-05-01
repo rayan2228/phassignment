@@ -1,4 +1,4 @@
-import { Task } from "@/app/lib/model/task.model"
+import { Task } from "@/lib/model/task.model"
 
 
 export async function GET() {

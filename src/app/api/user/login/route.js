@@ -1,4 +1,4 @@
-import { User } from "@/app/lib/model/user.schema"
+import { User } from "@/lib/model/user.schema"
 
 export async function POST(req, res) {
     const data = await req.json()

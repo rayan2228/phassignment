@@ -1,4 +1,4 @@
-import { User } from "@/app/lib/model/user.schema"
+import { User } from "@/lib/model/user.schema"
 
 export async function GET() {
     const users = await User.find().select("-password")

@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { dbConnection } from "./lib/data/dbConnect";
+import { dbConnection } from "@/lib/data/dbConnect";
+
 
 const inter = Inter({ subsets: ["latin"] });
 

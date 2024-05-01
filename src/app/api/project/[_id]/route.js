@@ -1,4 +1,4 @@
-import { Project } from "@/app/lib/model/project.model";
+import { Project } from "@/lib/model/project.model";
 
 
 export async function PATCH(request, { params: { _id } }) {
