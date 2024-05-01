@@ -3,8 +3,10 @@ import React from 'react'
 import { Button, Checkbox, Form, Input, message, notification } from 'antd'
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import useAuthStore from '@/zustand/authStore';
 
 const login = () => {
+    const loginUser = useAuthStore((state) => state.loginUser)
     const router = useRouter()
     const [api, contextHolder] = notification.useNotification();
     const openNotification = (type, message) => {
@@ -21,6 +23,7 @@ const login = () => {
         const data = await res.json()
         if (data.message) {
             openNotification('success', data.message)
+            loginUser(data.data)
             router.push("/")
         } else {
             openNotification('error', data.error)
