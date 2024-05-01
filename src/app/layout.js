@@ -14,7 +14,9 @@ export default async function RootLayout({ children }) {
   await dbConnection()
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }

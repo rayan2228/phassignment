@@ -6,7 +6,7 @@ import { persist, devtools } from "zustand/middleware"
 const authStore = (set) => ({
     authUser: {},
     loginUser: (userData) => set((state) => (state.authUser = userData)),
-    logoutUser: () => set((state) => (state.authUser = [])),
+    logoutUser: () => set((state) => (state.authUser = {})),
 })
 
 const useAuthStore = create(
