@@ -15,14 +15,17 @@ const taskSchema = new Schema({
     },
     status: {
         type: String,
-        enum: ['pending', 'completed']
+        enum: ['pending', 'completed'],
+        default: "pending"
     },
     project: {
+        required: true,
         type: Schema.Types.ObjectId,
         ref: "Project"
     },
     users: [
         {
+            required: true,
             type: Schema.Types.ObjectId,
             ref: "User"
         }
