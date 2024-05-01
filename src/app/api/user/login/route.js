@@ -6,6 +6,6 @@ export async function POST(req, res) {
     if (userFound) {
         return Response.json({ message: "user login successfully", data: userFound })
     } else {
-        return Response.json({ message: "wrong email and password" })
+        return Response.json({ error: "wrong email and password" })
     }
 }

@@ -8,7 +8,7 @@ export async function POST(req, res) {
     const data = await req.json()
     const userFound = await User.findOne({ email: data.email })
     if (userFound) {
-        return Response.json({ message: "email already used" })
+        return Response.json({ error: "email already used" })
     } else {
         const user = await User.create(data)
         return Response.json({ message: "user created successfully", data: user })
