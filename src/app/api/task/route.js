@@ -2,7 +2,7 @@ import { Task } from "@/app/lib/model/task.model"
 
 
 export async function GET() {
-    const tasks = await Task.find()
+    const tasks = await Task.find().populate("users").populate("project")
     return Response.json({ tasks })
 }
 export async function POST(req, res) {
