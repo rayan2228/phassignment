@@ -4,6 +4,7 @@ import { Space, Table, Button, notification } from 'antd';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { Content } from 'next/font/google';
 import moment from 'moment';
+import Link from 'next/link';
 
 const ProjectList = () => {
     const queryClient = useQueryClient();
@@ -32,10 +33,14 @@ const ProjectList = () => {
             render: (_, record) => (
                 <Space size="middle">
                     <Button type="primary" >
-                        View
+                        <Link type="primary" href={`/home/project/${record._id}`} >
+                            View
+                        </Link>
                     </Button>
                     <Button type="primary" className='bg-yellow-600'>
-                        Edit
+                        <Link type="primary" href={`/home/project/edit/${record._id}`} >
+                            Edit
+                        </Link>
                     </Button>
                     <Button type="primary" danger onClick={() => handleDelete(record._id)}>
                         Delete
